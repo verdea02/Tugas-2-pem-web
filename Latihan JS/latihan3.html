@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script>
+      function ubahData() {
+        document.getElementById('paragraf1').innerHTML = 'data baru';
+        alert('Data Telah Diubah');
+      }
+      function getDataParagraf1() {
+        var data = document.getElementById('paragraf1').innerHTML;
+        alert(data);
+      }
+    </script>
+  </head>
+  <body>
+    <p id="paragraf1">ini paragraf saya</p>
+    <button type="button" onclick="ubahData()">ubah data</button>
+    <button type="button" onclick="getDataParagraf1()">cek data</button>
+  </body>
+</html>
